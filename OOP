@@ -1,3 +1,4 @@
+assignment 1
 # Base class: Phone
 class Phone:
     def __init__(self, brand, model):
