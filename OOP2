@@ -1,0 +1,33 @@
+Assignment 2
+# Base class
+class Animal:
+    def move(self):
+        print("This animal moves in its own way.")
+
+# Subclasses with different move() implementations
+class Snake(Animal):
+    def move(self):
+        print("🐍 Slithering on the ground...")
+
+class Bird(Animal):
+    def move(self):
+        print("🕊️ Flying through the sky...")
+
+class Kangaroo(Animal):
+    def move(self):
+        print("🦘 Hopping across the land...")
+
+class Fish(Animal):
+    def move(self):
+        print("🐟 Swimming in the water...")
+
+# Testing polymorphism
+def main():
+    animals = [Snake(), Bird(), Kangaroo(), Fish()]
+
+    print("How do these animals move?\n")
+    for animal in animals:
+        animal.move()
+
+if __name__ == "__main__":
+    main()
